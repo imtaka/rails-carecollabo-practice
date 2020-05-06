@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @careplan.customer_id %>
+</p>
+
+<p>
+  <strong>Create plan:</strong>
+  <%= @careplan.create_plan %>
+</p>
+
+<p>
+  <strong>Update plan:</strong>
+  <%= @careplan.update_plan %>
+</p>
+
+<p>
+  <strong>Care task:</strong>
+  <%= @careplan.care_task %>
+</p>
+
+<p>
+  <strong>Long time care goal:</strong>
+  <%= @careplan.long_time_care_goal %>
+</p>
+
+<p>
+  <strong>Short time care goal:</strong>
+  <%= @careplan.short_time_care_goal %>
+</p>
+
+<p>
+  <strong>User wants:</strong>
+  <%= @careplan.user_wants %>
+</p>
+
+<p>
+  <strong>Family wants:</strong>
+  <%= @careplan.family_wants %>
+</p>
+
+<p>
+  <strong>Situation achieved goal:</strong>
+  <%= @careplan.situation_achieved_goal %>
+</p>
+
+<%= link_to 'Edit', edit_customer_careplan_path(@customer, @careplan) %> |
+<%= link_to 'Back', customer_careplans_path %>

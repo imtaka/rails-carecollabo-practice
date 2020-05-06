@@ -1,0 +1,62 @@
+<%= form_with(model: [@customer,@careplan], local: true) do |form| %>
+  <% if careplan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(careplan.errors.count, "error") %> prohibited this careplan from being saved:</h2>
+
+      <ul>
+        <% careplan.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :customer_id %>
+    <%= form.text_field :customer_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :create_plan %>
+    <%= form.date_select :create_plan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :update_plan %>
+    <%= form.date_select :update_plan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :care_task %>
+    <%= form.text_area :care_task %>
+  </div>
+
+  <div class="field">
+    <%= form.label :long_time_care_goal %>
+    <%= form.text_area :long_time_care_goal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :short_time_care_goal %>
+    <%= form.text_area :short_time_care_goal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_wants %>
+    <%= form.text_area :user_wants %>
+  </div>
+
+  <div class="field">
+    <%= form.label :family_wants %>
+    <%= form.text_area :family_wants %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situation_achieved_goal %>
+    <%= form.text_area :situation_achieved_goal %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

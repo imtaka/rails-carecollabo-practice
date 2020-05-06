@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  create_plan: 2020-05-06
+  update_plan: 2020-05-06
+  care_task: MyText
+  long_time_care_goal: MyText
+  short_time_care_goal: MyText
+  user_wants: MyText
+  family_wants: MyText
+  situation_achieved_goal: MyText
+
+two:
+  customer: two
+  create_plan: 2020-05-06
+  update_plan: 2020-05-06
+  care_task: MyText
+  long_time_care_goal: MyText
+  short_time_care_goal: MyText
+  user_wants: MyText
+  family_wants: MyText
+  situation_achieved_goal: MyText
